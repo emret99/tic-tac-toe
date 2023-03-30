@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script defer src="./assets/js/input.js"></script>
+    <script defer src="./assets/js/game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="headline" class="h2 text-center p-2">Welcome to Tic Tac Toe Game</div>
+        </div>
+        <div class="row">
+            <div class="text-center mt-5 fw-bold">
+                Please enter players name and press the start button
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center">
+            
+            <form class="w-50" id="" action="">
+                <label class="fw-bold" for="">Player X:</label>
+                <input id="player1" class="rounded shadow" type="text" placeholder="Your Name" name="player1" data-player-sign="X" id="" maxlength="20">
+                    
+            </form>
+            <form class="w-50" action="">
+                <label class="fw-bold" for="">Player O:</label>
+                <input id="player2" class="rounded shadow" type="text" placeholder="Your Name" name="player2" data-player-sign="O" id="" maxlength="20">
+                    
+            </form>
+        </div>
+        <div class="row mt-3 justify-content-center">
+            <button id="startgame" class="btn btn-dark w-25 fw-bold fs-5">Start Game</button>
+        </div>
+        <div  class="row justify-content-center my-3">
+            <div id="error-msg" class="h5 w-50 shadow rounded-1 p-1 text-center">Please enter both players name correctly</div>
+        </div>
+        <div  class="row justify-content-center my-3">
+            <div id="turn-info" class="h5 w-50 shadow rounded-1 p-1 text-center"><span id="playerturn"></span>'s turn</div>
+        </div>
+        <div id="gamearea" class="row ">
+            <div id="emptycol" class="col-md"></div>
+            <div class="col-12 col-md-5 ">
+                <div class="row gy-5">
+                    <div class=" col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                    <div class="col-4 ">
+                        <div class="gamebox">
+                        </div>             
+                    </div>
+                </div>
+            </div>
+            <div id="emptycol" class="col-md"></div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>

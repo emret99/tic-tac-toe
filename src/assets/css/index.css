@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-style: inherit;
+}
+
+body {
+  background-color: rgba(236, 236, 236, 0.7333333333);
+}
+
+#headline {
+  background-color: #1a222b;
+  color: rgba(236, 232, 232, 0.9333333333);
+  font-size: 500;
+}
+
+#error-msg {
+  display: none;
+  background-color: #ffbaba;
+  color: #7a0000;
+}
+
+#gamearea {
+  display: none;
+}
+
+.gamebox {
+  font-size: 5.9rem;
+  text-align: center;
+  line-height: 100%;
+  width: 6rem;
+  height: 6rem;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+  text-size-adjust: 6rem;
+  background-color: rgba(30, 64, 175, 0.3333333333);
+  border: 1px solid black;
+}
+.gamebox:hover {
+  background-color: #d0ff00;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: #d0ff00;
+}
+
+#turn-info {
+  display: none;
+  background-color: #1a222b;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

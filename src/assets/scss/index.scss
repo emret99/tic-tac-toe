@@ -1,0 +1,51 @@
+@import 'variables';
+*{
+    margin:0;
+    padding: 0;
+    font-style: inherit;
+}
+body{
+    background-color: $custom-background;
+}
+
+#headline{
+    background-color: $custom-headline-background;
+    color: $custom-text-color;
+    font-size: $custom-font-size;
+
+}
+#error-msg{
+    display: none;
+    background-color: $custom-error-background;
+    color: $custom-error-font-color;
+}
+#gamearea{
+    display: none;
+}
+
+.gamebox{
+    font-size: calc($custom-gamebox-width - 0.1rem) ;
+    text-align: center;
+    line-height: 100%;
+    width: $custom-gamebox-width;
+    height: $custom-gamebox-width;
+    transition: all .25s ease-in-out;
+	text-align: center;
+    text-size-adjust: $custom-gamebox-width;
+    background-color: $gamebox-background;
+    border: 1px solid black;
+    &:hover{
+        background-color:$gamebox-background-hover;
+        cursor: pointer;
+    }
+}
+.disabled{
+    background-color: $gamebox-background-hover;
+}
+#turn-info{
+    display: none;
+    background-color: $custom-headline-background;
+    color: white;
+    
+
+}
